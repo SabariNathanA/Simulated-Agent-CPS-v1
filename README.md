@@ -24,6 +24,11 @@ The simulation is composed of several key classes and processes that interact to
 -   **`fault_injector`**: An independent process that injects faults into sensors and actuators at random intervals.
 -   **`setup_simulation_from_csv`**: The "factory builder" function that reads the `.csv` configuration files at the start and constructs the entire simulation environment.
 
+- ![alt text][logo]
+
+[logo]: https://github.com/SabariNathanA/Simulated-Agent-CPS-v1/blob/main/UML%20Diagram_v3file.svg "UML Diagram"
+
+
 ## Example Scenario: "Artisan Furniture Co."
 
 This project is perfectly suited to model a workshop where specialized machines work on different projects in parallel.
@@ -45,3 +50,6 @@ Ensure you have Python 3 installed. Then, install the necessary libraries:
 
 ```sh
 pip install simpy pandas
+
+## TODO
+Upload the Schedules and Machines. csv for this example
