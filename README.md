@@ -50,6 +50,7 @@ Ensure you have Python 3 installed. Then, install the necessary libraries:
 
 ```sh
 pip install simpy pandas
+```
 
 ### 2. Configuration
 
@@ -68,7 +69,8 @@ This file defines the machines in the factory and their physical connections.
 machine_id,next_machine_id,schedule_id
 CNC-Cutter-01,,SCH-CUT-A
 Frame-Welder-01,,SCH-WELD-B
-CNC-Cutter-02,Frame-Welder-01,SCH-CUT-C```
+CNC-Cutter-02,Frame-Welder-01,SCH-CUT-C
+```
 
 #### `schedules.csv`
 
@@ -85,11 +87,13 @@ SCH-CUT-A,book-shelf-side-panel,25
 SCH-WELD-B,chair-frame-set,50
 SCH-WELD-B,coffee-table-frame,35
 SCH-CUT-C,coffee-table-top-walnut,22
+```
 
 ### 3. Execution
 Run the simulation from your terminal:
 ```sh
 python simulation.py
+```
 
 ### 4. Output
 -   Console output:  You will see high-level status messages, including the start and finish of the simulation.
