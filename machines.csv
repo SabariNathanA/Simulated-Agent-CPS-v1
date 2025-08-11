@@ -1,0 +1,4 @@
+machine_id,next_machine_id,schedule_id
+CNC-Cutter-01,,SCH-CUT-A
+Frame-Welder-01,,SCH-WELD-B
+CNC-Cutter-02,Frame-Welder-01,SCH-CUT-C
