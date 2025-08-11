@@ -1,0 +1,6 @@
+schedule_id,product_id,process_time
+SCH-CUT-A,dining-table-top,40
+SCH-CUT-A,book-shelf-side-panel,25
+SCH-WELD-B,chair-frame-set,50
+SCH-WELD-B,coffee-table-frame,35
+SCH-CUT-C,coffee-table-top-walnut,22
