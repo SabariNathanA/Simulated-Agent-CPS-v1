@@ -51,5 +51,46 @@ Ensure you have Python 3 installed. Then, install the necessary libraries:
 ```sh
 pip install simpy pandas
 
-## TODO
-Upload the Schedules and Machines. csv for this example
+### 2. Configuration
+
+1.  Save the main Python code as `simulation.py`.
+2.  In the same directory, create the two CSV configuration files detailed below.
+
+#### `machines.csv`
+
+This file defines the machines in the factory and their physical connections.
+
+-   `machine_id`: A unique name for the machine.
+-   `next_machine_id`: (Optional) The `machine_id` of the machine to notify upon task completion. Leave blank if none.
+-   `schedule_id`: The ID of the work schedule assigned to this machine.
+
+```csv
+machine_id,next_machine_id,schedule_id
+CNC-Cutter-01,,SCH-CUT-A
+Frame-Welder-01,,SCH-WELD-B
+CNC-Cutter-02,Frame-Welder-01,SCH-CUT-C```
+
+#### `schedules.csv`
+
+This file defines the "work orders" or tasks for each schedule.
+
+-   `schedule_id`: The ID that links to a machine in `machines.csv`.
+-   `product_id`: A unique name for the product or part being made.
+-   `process_time`: The number of time units required to complete the task.
+
+```csv
+schedule_id,product_id,process_time
+SCH-CUT-A,dining-table-top,40
+SCH-CUT-A,book-shelf-side-panel,25
+SCH-WELD-B,chair-frame-set,50
+SCH-WELD-B,coffee-table-frame,35
+SCH-CUT-C,coffee-table-top-walnut,22
+
+### 3. Execution
+Run the simulation from your terminal:
+```sh
+python simulation.py
+
+### 4. Output
+-   Console output:  You will see high-level status messages, including the start and finish of the simulation.
+-   simulation.log: A new file will be created in your directory. This file contains a detailed, timestamped log of every event that occurred during the simulation, providing a complete trace for analysis.
