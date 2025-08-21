@@ -44,5 +44,5 @@ python modular_cps_v9a.py
 ```
 
 ### 4. Output
--   Console output:  You will see high-level status messages, including the start and finish of the simulation.
+-   Console output:  You will see high-level status updates. You can pause the simulation by pressing p and resume by clicking r. 
 -   simulation.log: A new file will be created in your directory. This file contains a detailed, timestamped log of every event that occurred during the simulation, providing a complete trace for analysis.
