@@ -11,7 +11,7 @@ This builds on v1.0 and introduces Terminal UI, MockLLM calls via JSON
 [arch]: https://github.com/SabariNathanA/Simulated-Agent-CPS-v1/blob/v2-with-mock-LLM/arch9.2.png "Architecture Diagram"
 
 
-## Example Scenario: "Artisan Furniture Co."
+## Example Scenario: Car Manufacturing Factory
 
 This project is perfectly suited to model a car factory. Below is a schematic. 
 - ![alt text][layout]
