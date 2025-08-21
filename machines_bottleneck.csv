@@ -1,0 +1,6 @@
+machine_id,next_machine_id,schedule_id
+Body-Panel-Stamper-A,Chassis-Welder-01,SCH-PANEL-A
+Body-Panel-Stamper-B,Chassis-Welder-01,SCH-PANEL-B
+Chassis-Welder-01,Engine-Mount-Station,SCH-WELD
+Engine-Mount-Station,,SCH-ENGINE
+Door-Assembly-Line,,SCH-DOOR
